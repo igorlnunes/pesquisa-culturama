@@ -55,7 +55,8 @@ label {
 }
 
 input[type="tel"],
-input[type="file"] {
+input[type="file"],
+input[aria-describedby="musicTypeId"] {
     margin-bottom: 0;
 }
 

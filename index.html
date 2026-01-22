@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de pesquisa da empresa Culturama">
     <link rel="icon" href="culturama-favico.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,7 +125,7 @@
                     <label for="ox">X</label>
                     <br>
                     <label for="musicStyle">Estilo musical:</label>
-                    <input list="styleTypes" type="text" name="userMusicStyle" type="text">
+                    <input id="musicStyle" list="styleTypes" type="text" name="userMusicStyle" type="text" aria-describedby="musicTypeId">
                     <datalist id="styleTypes">
                         <option value="Rock">
                         <option value="Pop">
@@ -132,6 +133,7 @@
                         <option value="Sertanejo">
     
                     </datalist>
+                    <small id="musicTypeId">Preencha com o seu estilo musical: Rock, Pop, Samba ou Sertanejo.</small>
                     <br>
                     <label for="favoriteColor">Cor favorita:</label>
                     <input type="color" name="userFavoriteColor" id="favoriteColor">
